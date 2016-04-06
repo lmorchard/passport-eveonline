@@ -45,7 +45,7 @@ Here's an example of how to construct and configure the strategy:
 
     passport.use(new EveOnlineStrategy({
         clientID: EVEONLINE_CLIENT_ID,
-        secretKey: EVEONLINE_SECRET_KEY,
+        clientSecret: EVEONLINE_SECRET_KEY,
         callbackURL: "http://mysite.com/auth/eveonline/callback"
       },
       function(characterInformation, done) {
